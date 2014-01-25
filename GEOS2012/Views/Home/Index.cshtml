@@ -1,0 +1,40 @@
+﻿
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+            </hgroup>
+            <p><h3>@Html.ActionLink("Ir a formulario", "Index", "Formulario")</h3></p>
+        </div>
+    </section>
+}
+<h3>Instrucciones</h3>
+<ol class="round">
+    <li class="one">
+        <h5>- Descargar el visual studio express 2012 para web</h5>
+        <a href="http://www.microsoft.com/es-mx/download/details.aspx?id=34673">Aqui</a>
+    </li>
+
+    <li class="two">
+        <h5> Crear un proyecto en MVC (3 o 4) usando C#</h5>
+        NuGet facilita la instalación y actualización de herramientas y bibliotecas gratuitas.
+        <a href="http://www.asp.net/mvc/tutorials/mvc-4/getting-started-with-aspnet-mvc4/intro-to-aspnet-mvc-4">Más información aquí de MVC</a>
+    </li>
+
+    <li class="three">
+        <h5>Crear una vista (pagina) "Formulario", cuya ruta sea (http://...)/Formulario/</h5>
+        3.1 - Dentro de esta página, poner un formulario con un text input y un botón
+	    3.2 - Al presionar el botón, enviar el dato del text input a la siguiente página (ver siguiente punto)
+    </li>
+    <li class="four">
+        <h5>Crear una vista "Exito", cuya ruta sea /Formulario/Exito</h5>
+        4.1 - Esta página toma la información del text input de la página del punto anterior.
+	    4.2 - Mostrar el mensaje "Hola, escribiste: [mensaje del text input]"
+    </li>
+    <li class="five">
+        <h5>Mostrar la cantidad de caracteres usando jQuery en la vista de Exito con un message box.</h5>
+        5.1 - Al cargar la página, usando jQuery (no solo javascript simple, hay que usar codigo con jQuery), contar los caracteres del mensaje de "Hola, escribiste: [mensaje del text input]"
+	    5.2 - Mostrar un Dialog con la cantidad de caracteres usando jQuery UI.
+    </li>
+</ol>

@@ -1,0 +1,23 @@
+﻿
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+            </hgroup>
+        </div>
+    </section>
+}
+
+@using (Html.BeginForm("Exito", "Formulario")) {
+    <fieldset>
+        <legend>Escribe algo</legend>
+        <ol>
+            <li>
+                @Html.Label("Escribe algo")
+                @Html.TextBox("palabra")
+            </li>
+        </ol>
+        <input type="submit" value="Ver" />
+    </fieldset>
+}

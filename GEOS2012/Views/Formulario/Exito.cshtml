@@ -1,0 +1,21 @@
+﻿@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+            </hgroup>
+        </div>
+    </section>
+}
+
+<div id="mensaje">"Hola, escribiste <span>@Html.Encode(ViewBag.palabra)</span>"</div>
+
+<div id="dialog" title="Numero de caracteres">
+  <p></p>
+</div>
+
+@section Scripts {
+    @Styles.Render("~/Content/jqueryui");
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/contador")
+}
